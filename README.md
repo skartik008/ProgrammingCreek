@@ -1,4 +1,4 @@
-# Programming Creek
+# Program Creek
 
 Solving the problems in the program creek website
 
