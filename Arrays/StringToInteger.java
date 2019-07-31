@@ -1,4 +1,4 @@
-package programcreek.arrays;
+package programcreek.Arrays;
 
 /**
  * 
