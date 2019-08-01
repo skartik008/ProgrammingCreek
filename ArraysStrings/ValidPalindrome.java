@@ -20,7 +20,6 @@ public class ValidPalindrome {
 			return false;
 		}
 		str = str.toLowerCase();
-		Boolean res = false;
 		int i = 0;
 		str = str.replaceAll("[^a-z0-9]", "");
 		int j = str.length() - 1;
