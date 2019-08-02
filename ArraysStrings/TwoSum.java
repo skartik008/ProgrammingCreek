@@ -3,7 +3,7 @@ package programcreek.ArraysStrings;
 /**
  * 
  * @author kartik
- *	Program to find the indices of the two numbers that add up to a specific target
+ *	Program to return all the pairs of numbers that add up to a specific target
  */
 
 import java.util.HashMap;
