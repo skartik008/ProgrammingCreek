@@ -9,7 +9,7 @@ public class SearchInsertedPosition {
 
 	public static void main(String[] args) {
 		int[] input = { 1, 3, 5, 6 };
-		int target = 2;
+		int target = 5;
 		int pos = insertPosition(input, target);
 		System.out.println(pos);
 	}
