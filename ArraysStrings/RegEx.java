@@ -1,5 +1,11 @@
 package programcreek.ArraysStrings;
 
+/**
+ * 
+ * @author kartik
+ * Program to do regular expression matching
+ */
+
 public class RegEx {
 
 	public static void main(String[] args) {
