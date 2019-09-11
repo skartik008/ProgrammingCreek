@@ -33,6 +33,7 @@ public class ReverseVowelsString {
 		int i = 0;
 		int j = arr.length - 1;
 		while (i < j) {
+			
 			if (!set.contains(arr[i])) {
 				i++;
 				continue;
