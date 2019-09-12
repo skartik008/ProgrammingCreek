@@ -4,14 +4,13 @@ import java.util.Arrays;
 
 /**
  * 
- * @author kartik 
- * Program to find the K Closest Points to Origin
+ * @author kartik Program to find the K Closest Points to Origin
  */
 
 public class KClosestPointsOrigin {
 
 	public static void main(String[] args) {
-		int[][] inputArr = { { 3, 3 }, { 5, -1 }, {-2, 4} };
+		int[][] inputArr = { { 3, 3 }, { 5, -1 }, { -2, 4 } };
 		int k = 2;
 		int[][] result = kClosest(inputArr, k);
 		System.out.println(Arrays.deepToString(result));
