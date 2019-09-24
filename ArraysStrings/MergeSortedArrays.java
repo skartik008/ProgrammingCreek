@@ -2,21 +2,21 @@ package programcreek.ArraysStrings;
 
 /**
  * 
- * @author kartik
- *  Program to merge two sorted arrays into the first array
+ * @author kartik Program to merge two sorted arrays into the first array
  */
 
 public class MergeSortedArrays {
 
 	public static void main(String[] args) {
-		int[] arrOne = new int[10];
-		int[] arrTwo = { 2, 4, 6, 8, 10 };
-		arrOne[0] = 1;
-		arrOne[1] = 3;
-		arrOne[2] = 5;
-		arrOne[3] = 7;
-		arrOne[4] = 9;
-		mergeArrays(arrOne, 5, arrTwo, 5);
+		int len = 20;
+		int halfLen = len/2;
+		int[] arrOne = new int[len];
+		int[] arrTwo = new int[halfLen];
+		for (int i = 0; i < halfLen; i++) {
+			arrOne[i] = i * 2 + 1;
+			arrTwo[i] = i * 2 + 2;
+		}
+		mergeArrays(arrOne, halfLen, arrTwo, halfLen);
 	}
 
 	private static void mergeArrays(int[] arrOne, int i, int[] arrTwo, int j) {
