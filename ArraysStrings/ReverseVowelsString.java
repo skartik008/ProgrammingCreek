@@ -17,7 +17,7 @@ public class ReverseVowelsString {
 	}
 
 	private static String reverseVowels(String str) {
-		HashSet<Character> set = new HashSet<Character>();
+		HashSet<Character> set = new HashSet<Character>();		
 		set.add('a');
 		set.add('e');
 		set.add('i');
@@ -28,7 +28,7 @@ public class ReverseVowelsString {
 		set.add('I');
 		set.add('O');
 		set.add('U');
-
+		
 		char[] arr = str.toCharArray();
 		int i = 0;
 		int j = arr.length - 1;
