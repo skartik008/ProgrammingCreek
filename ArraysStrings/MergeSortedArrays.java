@@ -9,7 +9,7 @@ public class MergeSortedArrays {
 
 	public static void main(String[] args) {
 		int len = 20;
-		int halfLen = len/2;
+		int halfLen = len / 2;
 		int[] arrOne = new int[len];
 		int[] arrTwo = new int[halfLen];
 		for (int i = 0; i < halfLen; i++) {
