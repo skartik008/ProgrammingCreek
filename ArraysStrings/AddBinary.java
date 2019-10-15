@@ -8,7 +8,7 @@ package programcreek.ArraysStrings;
 public class AddBinary {
 
 	public static void main(String[] args) {
-		String a = "1101", b = "100";
+		String a = "1101", b = "1111";
 		String result;
 		result = addBinary(a, b);
 		System.out.println(result); 
