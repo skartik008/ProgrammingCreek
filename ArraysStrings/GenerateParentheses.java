@@ -12,21 +12,18 @@ public class GenerateParentheses {
 
 	public static void main(String[] args) {
 		int pair = 3;
-		String res[];
-		res = generatePara(pair);
-		for (int i = 0; i < res.length; i++) {
-			System.out.println(res[i]);
-		}
-
+		generatePara(pair);
 	}
 
-	private static String[] generatePara(int pair) {
+	private static void generatePara(int pair) {
 		ArrayList<String> res = new ArrayList<String>();
 		int numL = pair;
 		int numR = pair;
 		helper(numL, numR, "", res);
 		String[] ans = GetStringArray(res);
-		return ans;
+		for (int i = 0; i < ans.length; i++) {
+			System.out.println(ans[i]);
+		}
 	}
 
 	private static void helper(int numL, int numR, String str, ArrayList<String> res) {
