@@ -11,9 +11,12 @@ import java.util.*;
 public class PermutationDupInt {
 
 	public static void main(String[] args) {
-		String str = "122";
+		String str = "112";
+		generatePermDup(str);
+	}
+
+	private static void generatePermDup(String str) {
 		ArrayList<String> ans = new ArrayList<String>();
-		
 		String slate = "";
 		helper(str, 0, slate, ans);
 		int idx = 0;
@@ -34,13 +37,13 @@ public class PermutationDupInt {
 			return;
 		} else {
 			for (int j = i; j < str.length(); j++) {
-				if(set.contains(str.charAt(j))) {
+				if (set.contains(str.charAt(j))) {
 					continue;
 				}
 				set.add(str.charAt(j));
 				str = swap(str, i, j);
 				helper(str, i + 1, slate + str.charAt(i), ans);
-				str = swap(str, i, j);				
+				str = swap(str, i, j);
 			}
 		}
 	}
