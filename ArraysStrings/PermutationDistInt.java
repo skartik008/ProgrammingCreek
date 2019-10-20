@@ -12,6 +12,10 @@ public class PermutationDistInt {
 
 	public static void main(String[] args) {
 		String str = "123";
+		generatePermDist(str);
+	}
+
+	private static void generatePermDist(String str) {
 		ArrayList<String> ans = new ArrayList<String>();
 		String slate = "";
 		helper(str, 0, slate, ans);
@@ -28,7 +32,7 @@ public class PermutationDistInt {
 
 	private static void helper(String str, int i, String slate, ArrayList<String> ans) {
 		if (i == str.length()) {
-			ans.add(slate);
+			ans.add(slate.toString());
 			return;
 		} else {
 			for (int j = i; j < str.length(); j++) {
