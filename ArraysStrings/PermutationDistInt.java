@@ -25,9 +25,7 @@ public class PermutationDistInt {
 			res[idx] = x;
 			idx++;
 		}
-		for (int i = 0; i < res.length; i++) {
-			System.out.println(res[i]);
-		}
+		System.out.println(Arrays.toString(res));
 	}
 
 	private static void helper(String str, int i, String slate, ArrayList<String> ans) {
