@@ -11,20 +11,17 @@ public class PalindromicDecompositionString {
 
 	public static void main(String[] args) {
 		String str = "abracadabra";
-
-		String res[];
-		res = generate_palindromic_decompositions(str);
-		for (int i = 0; i < res.length; i++) {
-			System.out.println(res[i]);
-		}
+		generate_palindromic_decompositions(str);
 	}
 
-	private static String[] generate_palindromic_decompositions(String str) {
+	private static void generate_palindromic_decompositions(String str) {
 		ArrayList<String> arr = new ArrayList<String>();
 		int n = str.length();
 		helper(arr, str, 0, n, "");
 		String[] ans = GetStringArray(arr);
-		return ans;
+		for (int i = 0; i < ans.length; i++) {
+			System.out.println(ans[i]);
+		}
 	}
 
 	private static void helper(ArrayList<String> arr, String str, int pos, int n, String curr_string) {
