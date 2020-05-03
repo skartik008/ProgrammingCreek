@@ -9,8 +9,9 @@ package programcreek.ArraysStrings;
 import java.util.*;
 
 public class RankK {
-
+	
 	public static void main(String[] args) {
+
 		int[] arr = { 7, 1, 3, 21, 10, 8, 27, 28, 22 };
 		int rank = 2;
 		int res = findElemRankK(arr, rank, 0, arr.length - 1);
@@ -24,18 +25,32 @@ public class RankK {
 			return -1;
 		}
 
-		PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
-
-		while (i <= j) {
-			queue.add(arr[i]);
-			i++;
+		int q = partition(arr, i, j);
+		if(q == (rank - 1)) {
+			return arr[q];
+		}else if( q > (rank  - 1) ) {
+			return findElemRankK(arr,rank,i,q-1);
+		}else {
+			return findElemRankK(arr,rank,q+1,j);
 		}
-		int idx = 0;
-		while (idx < rank -1) {
-			queue.poll();
-			idx++;
-		}
-		return queue.peek();
 	}
-
+	
+	private static int partition(int[] inputArray, int lo, int hi) {
+		int pivot = inputArray[hi];
+		int i = lo;
+		for(int j=lo;j<hi;j++) {
+			if(inputArray[j]< pivot) {
+				int temp = inputArray[i];
+				inputArray[i] = inputArray[j];
+				inputArray[j] = temp;
+				i=i+1;
+			}
+		}
+		
+		int tempvar= inputArray[i];
+		inputArray[i] = inputArray[hi];
+		inputArray[hi] = tempvar;
+		
+		return i;
+	}
 }
