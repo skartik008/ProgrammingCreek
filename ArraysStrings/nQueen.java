@@ -3,7 +3,7 @@ package programcreek.ArraysStrings;
 /**
  * 
  * @author kartik
- * nQueen problem
+ * nQueen problem, Chess
  */
 
 public class nQueen {
