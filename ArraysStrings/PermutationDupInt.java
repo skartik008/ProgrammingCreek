@@ -11,7 +11,7 @@ import java.util.*;
 public class PermutationDupInt {
 
 	public static void main(String[] args) {
-		String str = "112";
+		String str = "121";
 		generatePermDup(str);
 	}
 
