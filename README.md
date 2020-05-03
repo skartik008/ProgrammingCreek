@@ -1,8 +1,6 @@
 # Program Creek
 
-Solving the problems in the program creek website
-
-https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
+Source: [Programming Creek](https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
 
 **This site summarizes the common subjects in coding interviews, including :**
 
