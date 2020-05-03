@@ -8,7 +8,6 @@ import java.util.HashSet;
  * Program to count the number of jewels in a given array of stones
  */
 
-
 public class JewelsAndStones {
 
 	public static void main(String[] args) {
