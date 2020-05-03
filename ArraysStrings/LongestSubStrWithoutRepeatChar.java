@@ -11,7 +11,7 @@ import java.util.HashSet;
 public class LongestSubStrWithoutRepeatChar {
 
 	public static void main(String[] args) {
-		String str = "pwwke";
+		String str = "pwwawke";
 		int res = lenSubStr(str);
 		System.out.println(res);
 	}
@@ -20,25 +20,24 @@ public class LongestSubStrWithoutRepeatChar {
 		if (str.length() < 1) {
 			return 0;
 		}
-		int len = 0, idx = 0, count = 0;
-		HashSet<Character> set = new HashSet<Character>();
-		while (idx < str.length()) {
-			if (!set.contains(str.charAt(idx))) {
-				set.add(str.charAt(idx));
-				count++;
-				idx++;
-				if (count >= len) {
-					len = count;
+		int len = 1;
+		int i =0;
+		HashSet<Character> set = new HashSet<>();
+		for(int j=0;j<str.length();j++) {
+			if(!set.contains(str.charAt(j))) {
+				set.add(str.charAt(j));
+				len = Math.max(len, set.size());
+			}else {
+				while(i<j) {
+					if(str.charAt(i) == str.charAt(j)) {
+						i++;
+						break;
+					}
+					set.remove(str.charAt(i));
+					i++;
 				}
-			} else {
-				set.clear();
-				if (count >= len) {
-					len = count;
-				}
-				count = 0;
 			}
 		}
-
 		return len;
 	}
 
