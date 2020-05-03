@@ -13,13 +13,13 @@ public class LongestSubStrKUniqueChar {
 	public static void main(String[] args) {
 		String input = "abcadcacacaca";
 		int uniqueChars = 3;
-		int result = lengthLongest(input,uniqueChars);
+		int result = lengthLongest(input, uniqueChars);
 		System.out.println(result);
 
 	}
 
 	private static int lengthLongest(String str, int k) {
-		
+
 		if (str.length() < 1 || str == null) {
 			return -1;
 		}
