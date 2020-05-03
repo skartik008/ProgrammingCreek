@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class LexicographicalOrder {
 
 	public static void main(String[] args) {
-		String str[] = { "key1 abcd", "key2 zzz", "key1 hello", "key3 world", "key1 hello" };
+		String str[] = { "key1 hello", "key2 zzz", "key1 hello", "key3 world", "key1 hello", "key1 kartik" };
 		String res[] = lexOrder(str);
 		for (int i = 0; i < res.length; i++) {
 			System.out.println(res[i]);
