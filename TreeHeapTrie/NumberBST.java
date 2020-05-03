@@ -9,7 +9,7 @@ package programcreek.TreeHeapTrie;
 public class NumberBST {
 
 	public static void main(String[] args) {
-		int input = 3;
+		int input = 30;
 		long res = numberBST(input);
 		System.out.println(res);
 	}
