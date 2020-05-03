@@ -23,7 +23,6 @@ class WordNode {
 public class WordLadder {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String start = "hit";
 		String end = "cog";
 		Set<String> dict = new HashSet<String>();
@@ -45,7 +44,6 @@ public class WordLadder {
 		while (!queue.isEmpty()) {
 			WordNode top = queue.remove();
 			String word = top.word;
-
 			if (word.equals(end)) {
 				return top.numSteps;
 			}
