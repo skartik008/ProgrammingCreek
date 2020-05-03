@@ -20,7 +20,7 @@ public class LetterCasePermutation {
 			res[idx] = s;
 			idx++;
 		}
-		for(int i=0;i<res.length;i++) {
+		for (int i = 0; i < res.length; i++) {
 			System.out.println(res[i]);
 		}
 	}
@@ -29,12 +29,12 @@ public class LetterCasePermutation {
 
 		if (i == str.length()) {
 			ans.add(slate);
-		}else {
-			if(isDigit(str.charAt(i))) {
-				helper(str,i+1,slate+str.charAt(i),ans);
-			}else {
-				helper(str,i+1,(slate+(makeUpperCase(str.charAt(i)))),ans);
-				helper(str,i+1,(slate+(makeLowerCase(str.charAt(i)))),ans);
+		} else {
+			if (isDigit(str.charAt(i))) {
+				helper(str, i + 1, (slate + str.charAt(i)), ans);
+			} else {
+				helper(str, i + 1, (slate + (makeUpperCase(str.charAt(i)))), ans);
+				helper(str, i + 1, (slate + (makeLowerCase(str.charAt(i)))), ans);
 			}
 		}
 	}
@@ -51,9 +51,9 @@ public class LetterCasePermutation {
 
 	private static boolean isDigit(char ch) {
 		int j = ch - '0';
-		if(j > 0 && j < 10) {
+		if (j > 0 && j < 10) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
