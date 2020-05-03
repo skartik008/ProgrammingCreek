@@ -9,7 +9,7 @@ package programcreek.ArraysStrings;
 public class DecimalString {
 
 	public static void main(String[] args) {
-		int input = 2;
+		int input = 3;
 		dsHelper("",input);
 	}
 
