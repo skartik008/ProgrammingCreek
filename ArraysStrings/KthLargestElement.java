@@ -12,7 +12,7 @@ public class KthLargestElement {
 
 	public static void main(String[] args) {
 		int[] arr = {3,2,1,5,4,6,7};
-		int k = 3;
+		int k = 2;
 		int result = findKthLargest(arr,k);
 		System.out.println(result);
 
