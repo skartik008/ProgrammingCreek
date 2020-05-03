@@ -9,7 +9,7 @@ public class StringToInteger {
 
 	public static void main(String[] args) {
 
-		String str = "  -2a76  ";
+		String str = "  -245a76  ";
 		int res = atoi(str);
 		System.out.println(res);
 
