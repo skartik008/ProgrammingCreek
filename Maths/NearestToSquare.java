@@ -10,7 +10,7 @@ package programcreek.Maths;
 public class NearestToSquare {
 
 	public static void main(String[] args) {
-		int number = 90;
+		int number = 81;
 		int result = helper(number);
 		System.out.println(result);
 	}
@@ -24,7 +24,7 @@ public class NearestToSquare {
 		for (int i = 1; i < number / 2; i++) {
 			int square = i * i;
 			if (square == number) {
-				return 0;
+				return i;
 			} else if (square > number) {
 				int prevNumSquare = (i - 1) * (i - 1);
 				int diff1 = square - number;
